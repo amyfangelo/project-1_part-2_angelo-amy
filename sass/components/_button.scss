@@ -2,21 +2,44 @@
 // ========================================
 .button {
 
-  &--primary {
+  &--primarypink {
+      @include button($pink, $darkgreen);
 
     &:hover {
+      @include button ($pink, $offwhite);
 
     }
   }
-
-  &--secondary {
+  &--primarygreen {
+      @include button($lightgreen, $darkgreen);
 
     &:hover {
+      @include button ($lightgreen, $offwhite);
+    }
+  }
+
+  &--secondarypink {
+    @include ghostbutton ($offwhite, $pink, $darkgreen);
+
+
+    &:hover {
+    @include ghostbutton ($pink, $offwhite, $offwhite);
 
     }
+
+  }
+  &--secondarygreen {
+    @include ghostbutton ($offwhite, $lightgreen, $darkgreen);
+
+
+    &:hover {
+        @include ghostbutton ($lightgreen, $offwhite, $offwhite);
+
+    }
+
   }
 
   &--disabled {
-
+    @include ghostbutton ($offwhite, $pinkgrey, $pinkgrey);
   }
 }

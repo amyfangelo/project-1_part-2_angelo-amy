@@ -10,21 +10,26 @@ body {
 
 .header {
 
+
   &__figure--logo {
     width:280px;
     margin: auto;
     margin-top: 9px;
+
 
   }
 
   &__navigation {
     display: flex;
     justify-content: center;
+    margin-left: 50px;
+
+
   }
 
       &__navigation--link {
-
-
+        display: inline;
+        padding-right: 8px;
 
       }
 
@@ -38,14 +43,50 @@ body {
 
     &--index {
 
+      h1 {
+        padding-bottom: $spacer-m;
+        text-align: center;
+      }
+      p {
+        background-color: $pink;
+        border-radius: 10px;
+        padding: 12px;
+      }
+
     }
   }
 }
 
 .item-container {
     margin: $spacer-m $reset-0;
+
+    &--colorblock{
+      display: flex;
+    }
 }
 
+
+
 .footer {
+  background-color:$darkgreen;
+
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    background-color: $pink;
+
+
+  }
+
+      &__navigation--link {
+        display: inline;
+        padding-right: 8px;
+        color: $pink;
+  }
+          &__navigation--link :hover{
+          color: $offwhite;
+        }
+
 
 }
