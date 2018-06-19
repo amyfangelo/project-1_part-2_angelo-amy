@@ -1,8 +1,32 @@
 // Base Layout Stylesheet
 // This is where your layout of the project will go
 // ========================================
+body {
+  background-color: $offwhite;
+  font-family: 'nunito';
+  color: $darkgreen;
+
+}
 
 .header {
+
+  &__figure--logo {
+    width:280px;
+    margin: auto;
+    margin-top: 9px;
+
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: center;
+  }
+
+      &__navigation--link {
+
+
+
+      }
 
 }
 
