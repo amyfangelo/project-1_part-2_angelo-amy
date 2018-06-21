@@ -3,9 +3,27 @@
 
 
 // Label Styling -- Delete this if you are not using a label
+label {
+  font-size: 1rem;
+  color: $darkgreen;
+  padding:$spacer-s;
 
+}
 
 // Basic Form Input Styling
+.form--element input {
+  border: 1px, solid;
+  background: transparent;
+  border-color: $pink;
+  border-radius: 10px;
+  border-style: solid;
+  padding: .5rem;
 
+}
 
 // Select Form Input Styling
+.form--element select {
+background-color: transparent;
+border-color: $darkgreen;
+color: $darkgreen;
+}
