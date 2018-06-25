@@ -8,4 +8,11 @@
   padding: $spacer-s;
   display: inline-block;
 
+  @include media($medium){
+  width: 350px;
+}
+
+@include media($large){
+  width: 500px;
+  }
 }
