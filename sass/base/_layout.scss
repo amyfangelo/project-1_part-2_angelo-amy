@@ -11,17 +11,28 @@ body {
 .header {
 
   &__figure--logo {
-    width: 280px;
-    margin: auto;
-    margin-top: 9px;
+    width: 275px;
+    margin:auto;
+    margin-top: 15px;
 
+    @include media($medium){
+      width: 300px;
+      padding-left: $spacer-m;
 
+    }
+    @include media($large){
+      width: 350px;
+      padding-left: $spacer-m;
+
+    }
   }
 
   &__navigation {
     display: flex;
     justify-content: center;
     margin-left: 50px;
+    padding: 20px 0 20px 20px;
+
 
 
   }
@@ -30,13 +41,17 @@ body {
         display: inline;
         padding-right: 8px;
 
-      }
+
+}
 
 }
 
 .main {
   padding: $spacer-m;
   display: flex;
+
+
+
 
   &__section {
     margin: $spacer-lg $reset-0;
@@ -45,9 +60,12 @@ body {
     &--index {
 
       h1 {
-        padding-bottom: $spacer-m;
         text-align: center;
-        padding: $spacer-lg;
+        padding: $spacer-m;
+        background-color:$lightgreen;
+        border-radius: 10px;
+        padding-top: 20px;
+
       }
 
 
@@ -56,11 +74,48 @@ body {
         border-radius: 10px;
         padding: $spacer-lg;
         margin-top: 21px;
-        width: 300px;
+        width: 245px;
+
+        @include media($medium) {
+         width: 400px;
+          justify-content: center;
+
+        }
+
+        @include media($large) {
+         width: 500px;
+          justify-content: center;
+
+        }
       }
-
-
 }
+
+    &--typography {
+      background-color: $greengrey;
+      border-radius: 10px;
+      padding: $spacer-s;
+    }
+
+    &--components  {
+
+      h3, h5 {
+        padding: $spacer-s;
+      }
+      @include media($large) {
+        margin: auto;
+  }
+
+    }
+  &--elements {
+    h3, h5 {
+      padding: $spacer-s;
+    }
+    @include media($large) {
+      margin: auto;
+}
+
+  }
+
   }
 }
 
@@ -75,15 +130,23 @@ body {
   background-color:$darkgreen;
   margin-top: 100px;
 
+  @include media($medium){
+    clear:both;
+
+
+  }
+
+
 
   &__navigation {
     display: flex;
     justify-content: center;
     margin-left: 50px;
     background-color: $pink;
+    margin-top: 200px;
+    padding:10px;
 
-
-  }
+}
 
       &__navigation--link {
         display: inline;
