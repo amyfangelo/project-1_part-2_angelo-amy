@@ -8,6 +8,12 @@ label {
   color: $darkgreen;
   padding:$spacer-s;
 
+  @include media($large){
+  font-size: 1.2rem;
+
+  }
+
+
 }
 
 // Basic Form Input Styling
@@ -19,6 +25,11 @@ label {
   border-style: solid;
   padding: .5rem;
 
+  @include media($large) {
+  width: 70%;
+  height: 20px;
+
+  }
 }
 
 // Select Form Input Styling
@@ -26,4 +37,11 @@ label {
 background-color: transparent;
 border-color: $darkgreen;
 color: $darkgreen;
+
+@include media($large){
+width: 50%;
+height: 30px;
+
+}
+
 }
