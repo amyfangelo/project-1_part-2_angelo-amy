@@ -1,7 +1,7 @@
 # Project 1 - Part 2
 
 ## Links
-'I did not use any resources outside of the lectures and my notes on this assignment.'
+`I did not use any resources outside of the lectures and my notes on this assignment.`
 
 ## Resources
 [Github link](https://github.com/amyfangelo/project-1_part-2_angelo-amy)
